@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>E-Commerce Website</title>
+
+    <!-- Bootstrap 5 CSS cdn link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Bootstrap 5 js cdn link -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+
+    <!-- Themify Icons download css file from  themify.me/themify-icons -->
+    <link rel="stylesheet" href="css/themify-icons.css">
+    <!-- to Work i have add themify-icons.css & fonts file to this folder and i have to add '../' inside @font-face 
+    src:url('../  ) of the themify-icons.css file -->
+
+    <!-- MY coustom Style css file -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- MY coustom  Responsive css file -->
+    <link rel="stylesheet" href="css/responsive.css">
+    <!--MY coustom Main JS -->
+    <script src="main.js"></script>
+
+</head>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar">
+    <!--The 'Scroll spy' plugin is used to automatically update links in a navigation list based on scroll position.(when page is scrolling)-->
+
+    <div class="container mb-5 mt-5">
+        <div class="row">
+            <div class="col-8 d-flex flex-column">
+                <!--left side width // flex-column for making cart item one by one -->
+                <div class="cart-item p-3">
+                    <div class="d-flex flex-row">
+                        <img class="col-2 img-fluid prod_img" src="images/Brand_1.png" alt="" />
+                        <!-- col-2 for showing sml size img && sqare for sqare img -->
+                        <div class="col-6 p-2">
+                            <h5>Product Name</h5>
+                            <h6>Brand</h6>
+                            <p>$100</p>
+                        </div>
+
+                        <div class="col-2">
+                            Quatity
+                            <select name="" id="">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                            </select>
+                        </div>
+
+                        <div class="col-2 d-flex justify-content-end ">
+                            <!-- col-2 for showing sml size img && sqare for sqare img -->
+                            <i class="ti-close"></i>
+                        </div>
+                    </div>
+
+                    <div class="cart-item p-3">item2 </div>
+                    <div class="cart-item p-3">item3</div>
+
+                </div>
+
+
+
+
+                <div class="col-4 order p-3 m-2 ">
+                    <!--right side width -->
+                    <h4>Order Total</h4>
+
+                    <div class="d-flex flex-row py-2">
+                        <!--for making the promo & apply btn side by side ; 'py' = giving padding into y-directional -->
+                        <input type="text" class="form-control" placeholder="promo code">
+                        <button class="btn btn-primary">Apply</button>
+                    </div>
+
+
+                    <div class="d-flex flex-row justify-content-between p-2">
+                        <!--for making the item & cost side by side -->
+                        <span class="billing-item">items</span>
+                        <span class="billing-cost">$100</span>
+                    </div>
+                    <div class="d-flex flex-row justify-content-between p-2">
+                        <span class="billing-item">Shipping</span>
+                        <span class="billing-cost">$10</span>
+                    </div>
+                    <div class="d-flex flex-row justify-content-between p-2">
+                        <span class="billing-item">Discount</span>
+                        <span class="billing-cost">-$10</span>
+                    </div>
+                    <div class="d-flex flex-row justify-content-between p-2">
+                        <span class="billing-item fs-5">Total</span> -->
+                        <!--fs-5 is an font size class of bootstrap -->
+                        <span class="billing-cost fs-5">$100 </span>
+                    </div>
+
+                    <div class="d-flex mt-3">
+                        <a href="/checkout.html" class="btn btn-primary flex-grow-1">Pay Now</a>
+                    </div>
+                </div>
+                <!-- </div> -->
+
+            </div>
+        </div>
+
+</body>
+
+</html>

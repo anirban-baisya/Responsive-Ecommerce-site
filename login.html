@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>E-Commerce Website</title>
+
+    <!-- Bootstrap 5 CSS cdn link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Bootstrap 5 js cdn link -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+
+    <!-- Themify Icons download css file from  themify.me/themify-icons -->
+    <link rel="stylesheet" href="css/themify-icons.css">
+    <!-- to Work i have add themify-icons.css & fonts file to this folder and i have to add '../' inside @font-face 
+    src:url('../  ) of the themify-icons.css file -->
+
+    <!-- MY coustom Style css file -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- MY coustom  Responsive css file -->
+    <link rel="stylesheet" href="css/responsive.css">
+    <!--MY coustom Main JS -->
+    <script src="main.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+    <!---- Font awesom link local ----->
+
+</head>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar" class="login">
+    <!--The 'Scroll spy' plugin is used to automatically update links in a navigation list based on scroll position.(when page is scrolling)-->
+
+    <div class="container-fluid">
+        <div class="container">
+            <h2 class="text-center" id="title">Welcome to Herms-Shop</h2>
+            <p class="text-center">
+                <small class="text-muted"> Join us & avail special discounts exclusivly for you. </small>
+                <!---- text-muted bootstrap txt color ----->
+            </p>
+            <hr>
+            <div class="row">
+                <div class="col-md-5">
+                    <form role="form" method="post" action="register.php">
+                        <fieldset> <!---- used to group releated elements in the from ----->
+                            <p class="text-uppercase mb-3">
+                                <h5>SIGN UP.</h5>
+                            </p>
+                            <div class="form-group mb-3">
+                                <input type="text" name="username" id="username" class="form-control input-lg"
+                                    placeholder="username">
+                            </div>
+
+                            <div class="form-group mb-3">
+                                <input type="email" name="email" id="email" class="form-control input-lg"
+                                    placeholder="Email Address">
+                            </div>
+                            <div class="form-group mb-3">
+                                <input type="password" name="password" id="password" class="form-control input-lg"
+                                    placeholder="Password">
+                            </div>
+                            <div class="form-group mb-3">
+                                <input type="password" name="password2" id="password2" class="form-control input-lg"
+                                    placeholder="Password2">
+                            </div>
+                            <div class="form-check">
+                                <label class="form-check-label">
+                                    <input type="checkbox" class="form-check-input">
+                                    By Clicking register you're agree to our policy & terms
+                                </label>
+                            </div>
+                            <div>
+                                <input type="submit" class="btn btn-lg btn-primary   value=" Register">
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
+
+
+
+                <div class="col-md-5 Login">
+                    <form role="form">
+                        <fieldset>
+                            <p class="text-uppercase mb-3"> <h5> Login using your account:</h5> </p>
+
+                            <div class="form-group mb-3">
+                                <input type="email" name="username" id="username" class="form-control input-lg"
+                                    placeholder="username">
+                            </div>
+                            <div class="form-group mb-3">
+                                <input type="password" name="password" id="password" class="form-control input-lg"
+                                    placeholder="Password">
+                            </div>
+                            <div>
+                                <input type="submit" class="btn btn-success" value="Log In">
+                            </div>
+
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
