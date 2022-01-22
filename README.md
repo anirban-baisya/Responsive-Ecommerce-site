@@ -6,8 +6,7 @@ Deployed URL : https://anirban-baisya.github.io/Responsive-Ecommerce-site/
 
 
 ## Figma Design :
-               https://www.figma.com/file/xOQBOldCvGZVfuOmYvCnwS/Untitled
-
+               https://www.figma.com/file/xOQBOldCvGZVfuOmYvCnwS/Responsive-Ecommerce-site
 
 ## Features
 
